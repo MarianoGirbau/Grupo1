@@ -9,8 +9,40 @@
 </head>
 <body>
     <h1>Rama Develop</h1>
-    
-    
+
+     <!-- Button trigger modal -->
+     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        <i class="fa-solid fa-user d-none d-lg-block p-2"></i>Login
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade ventana-modal " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-3 " id="staticBackdropLabel" >Inicia Sesion</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-2 col-sm-3"></div>
+                <div class="col-8 col-sm-7" style="margin: 0 auto;">
+                  <img class="imgModal" width="100rem" height="100rem" src="./img/Logo.png"  alt="logo de la pagina">
+                <form action="submit">
+                  <input type="text" placeholder="Ingresar correo" class="m-2 input-login">
+                  <input type="password" placeholder="Ingresar clave" class="m-2 input-login"><br>
+                  <a href="./paginas/registro.html" class="link-login m-1" >Registrar</a>
+                  <a href="#" class="link-login m-1" > Recuperar Clave</a> <br>
+                  <button class="btn btn-primary btn-acceder submit" style="margin-top: 1rem ; margin-left: 3rem; margin-bottom: .7rem;">Acceder</button>
+                </form>
+                </div>
+                <div class="col-2 col-sm-2"></div>
+              </div>
+          
+            </div>
+          </div>
+        </div>
+      </div>
     
     
     
