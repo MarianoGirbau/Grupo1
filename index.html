@@ -14,8 +14,145 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Rama Develop</h1>
+    
+  <section id="NavBar">
+    <!-- Nav -->
+    <nav
+    class="navbar navbar-expand-lg navbar-dark fixed-top bg-secondary navegador"
+    id="navegador-index"
+    >
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a
+        class="navbar-brand m-0"
+        href="#"
+        alt="Pagina inicio CarpinchoTV"
+      >
+        <img
+          src="./imgNavBar/Logo.png"
+          class="rounded"
+          alt="Logo de Comida Facil"
+          width="60"
+          height="60"
+        />
+      </a>
+      <div
+        class="offcanvas offcanvas-start text-bg-dark"
+        tabindex="-1"
+        id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENÚ</h5>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./index.html"
+                alt="Enlace al Inicio"
+                >INICIO</a
+              >
+              <!-- active hace que mantega el hover -->
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                alt="Menú desplegable de categorias"
+                >CATEGORIAS</a
+              >
+              <ul class="dropdown-menu dropdown-menu-dark desplegable">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    alt="Enlace a categoria de carnes"
+                    >CARNES</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    alt="Enlace a categoria de ensaladas"
+                    >ENSALADAS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    alt="Enlace a categoria de frituras"
+                    >FRITURAS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    alt="Enlace a categoria de pastas"
+                    >PASTAS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    alt="Enlace a categoria de postres"
+                    >POSTRES</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
 
+          <hr/>
+
+          <form class="d-flex" role="search" action="./html/error404.html">
+            <input
+              class="form-control me-2 busqueda"
+              type="search"
+              placeholder="Buscar recetas"
+              aria-label="Search"
+            />
+            <button class="btn btn-success buscar" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+      <a
+        class="btn ms-0 ms-sm-1 ms-md-1 ms-lg-5 btn-danger login"
+        href="..."
+        role="button"
+        >Login</a
+      >
+    </div>
+  </nav>
+
+    </section>
+    
+    
     <footer style="background-color: rgb(255, 196, 0);">
       <div class="container text-center">
         <div class="row align-items-start justify-content-center align-items-center">
@@ -38,11 +175,6 @@
         </div>
       </div>
     </footer>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
 </html>
